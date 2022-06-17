@@ -1,0 +1,154 @@
+#gift{
+    height: 20px;
+}
+#search{
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+}
+#search-icon{
+    color: pink;
+    background-color: red;
+   
+        position: absolute;
+  
+     
+   
+        width: 100%;
+        margin-bottom: 10px;     
+}
+
+#first{
+    display: flex;
+background-color: #ff0000;
+height: 50px;
+margin-top: -10px;
+justify-content: center;
+align-items: center;
+align-content: center;
+color: white;
+line-height: normal;
+}
+#second{
+    display: flex;
+background-color: black;
+/* height: 50px; */
+margin-top: -10px;
+justify-content: space-between;
+align-items: center;
+align-content: center;
+color: white;
+line-height: normal;
+/* padding-left: 160px; */
+padding: 12px;
+}
+#c{
+    display: flex;
+    justify-content: space-around;
+  gap: 30px;
+    align-content: center;
+    align-items: center;
+    padding-right: 30px;
+
+}
+#b{
+    display: flex;
+    justify-content: space-around;
+  gap: 30px;
+    align-content: center;
+    align-items: center;
+    padding-left: 150px;
+    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Montserrat';  
+}
+#a img{
+    height: 38.5px;
+    width: 85px;
+    padding-left: 30px;
+}
+
+/* footer  ///////////////////////////////////////////////*/
+.center{
+    /* margin: auto; */
+    margin-top: 50px;
+    
+    text-align: center;
+}
+#india{
+    color: white;
+    background-color: #3a3939;
+    padding: 20px 200px;
+    line-height: normal;
+    font-size: 16px;
+      margin: 0 auto;
+    color: #8f8f8f;
+}
+
+#footer{
+    display: flex;
+}
+#listleft{
+    width: 45%;
+    /* border: solid red; */
+    background-color: black;
+    /* padding: 30px; */
+    color: white;
+}
+li {
+    list-style-type: none;
+    line-height: 1.6;
+    color: white;
+
+    /* word-break: break-word; */
+    opacity: .8;
+    font-size: 18px;
+}
+#listright{
+    width: 55%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    gap: 20px;
+    /* border: solid red; */
+    background-color: black;
+    color: white;
+    /* padding: 30px; */
+}
+
+#payment{
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+}
+/* #footer_main{
+    margin-top: 30px;
+} */
+
+/* "////////////" cart css start haer */
+.cartPanel{
+    position: fixed;
+    right:-500px;
+    width: 300px;
+    height: 600px;
+    border: solid 1px red;
+    background-color: #ff0000;
+    z-index: 1;
+    top: 0;
+    animation: slideIn 1s forwards;
+    /* animation:forwards  right  0 se -500*/
+}
+@keyframes slideIn{
+    from {
+        right: -500px;
+    }
+    to{
+        right: 0px;
+    }
+}

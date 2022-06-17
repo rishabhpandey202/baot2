@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="./components/compo.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <style>
+        #container{
+            /* border: solid 1px; */
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+        }
+        #fourImg{
+            flex-direction: column;
+            /* border: solid 1px; */
+            /* width: 10%; */
+            display: flex;
+        }
+        #singleImg img{
+            width: 394px;
+            height: 394px;
+            /* border: solid 1px red; */
+        }
+        .fa-check{
+    background-color:#04c78e;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    padding: 1px;
+    
+}
+.fa-star,.redColor{
+    color: red;
+    font-weight: bolder;
+    /* border: 0; */
+}
+.fa-plus,.fa-minus{
+border: none;
+background-color: white;
+font-size: 16px;
+font-weight: 400;
+}
+.threeImg{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#last{
+    /* border: solid ; */
+    display: flex;
+    align-items: center;
+}
+.red{
+    color: red;
+    margin-right: 10px;
+    font-weight: 700 !important;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.045em;
+    color: #fb3b32;
+    margin-right: 10px
+}
+.strikedOff{
+    text-decoration: line-through;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.045em;
+    color: #616161;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: baseline; */
+    /* border: solid 1px red; */
+    margin: auto;
+    /* padding-right: 20px; */
+}
+.green{
+    width: 40%;
+    letter-spacing: -0.045em;
+    color: #00C68C;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 40px;
+
+
+}
+.grey{
+    font-weight: 600;
+    font-family: Montserrat;
+    color: #616161;
+    line-height: 17px;
+    letter-spacing: -.045em;
+    font-size: 14px;
+    /* margin-right: 40px; */
+    width: 30%;
+}
+.green2{
+    font-weight: 700;
+    color: rgb(0, 198, 140);
+    visibility: visible;
+}
+.addToCart{
+    height: 42px;
+    line-height: 42px;
+    padding-left: 75px;
+    padding-right: 75px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    
+}
+.main{
+    padding: 20px;
+    border: solid 1px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: 'Montserrat';   
+}
+.last{
+    border: solid 1px rgb(107, 106, 106);
+    padding: 10px;
+    /* box-sizing:content-box; */
+    font-weight: bold;
+    color: red;
+    box-sizing: border-box;
+}
+
+    </style>
+</head>
+<body>
+    <div id="navbar_main"></div>
+    Home/boAt Rockerz 510
+    <div id="container">
+        <div id="fourImg">         </div>
+        <div id="singleImg">        </div>
+        <div id="rightSide">         </div>
+    <div id="last">                 </div>
+    </div>
+
+    <div id="footer_main"></div>
+</body>
+</html>
+<script type="module"  src="./product.js"></script>
+
+<!-- <script src="./product.js"></script> -->

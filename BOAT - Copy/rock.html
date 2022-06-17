@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>rockTheStreet</title>
+    <link rel="stylesheet" href="./components/compo.css">
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./rock.css"> -->
+   <style>
+    #filters{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: 
+#252525;
+        color: white;
+        border: solid red;
+    }
+    #containers{
+        background-color: #252525;
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    border: solid red;
+    justify-content: center;
+    gap: 25px;
+    margin: auto;
+}
+#containers img{
+    height: 264px;
+    width: 100%;
+}
+.row{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-top: 20px;
+   position: relative;
+   background-color: #e3e3e3;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.row2{
+    background-color: white;
+    border-radius: 12px;
+    padding-top: 30px;
+    padding: 10px;
+    margin: 6px;
+}
+button{
+    background-color: red;
+    color: white;
+    align-items: center;
+    padding: 13px 80px;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    font-family:  'Montserrat';
+}
+.row3{
+    display: flex;
+    gap :30px;
+    margin-top: -10px;
+
+}
+.yousave{
+    margin-top: -10px;
+}
+.strikedOff{
+    text-decoration: line-through;
+    font-family:  'Montserrat';
+    /* font-size: 15px; */
+}
+.intro{
+    font-family:  'Montserrat';
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+   }
+.saving{
+    position: absolute;
+    top: 10px;
+    left:0;
+    z-index: 1;
+    background-color:white;
+    letter-spacing: .5px;
+    padding: 4px;
+    color: red;
+    font-weight: 500;
+    font-size: 14px;
+    font-family:  'Montserrat', sans-serif;
+}
+.imgChange{
+    background-color: #e3e3e3;
+   
+}
+.fa-check{
+    background-color: 
+#04c78e;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    padding: 1px;
+    
+    /* margin-bottom: 30px; */
+}
+.fa-star,.redColor{
+    color: red;
+    font-weight: bolder;
+}
+   </style>
+</head>
+<body>
+    <div id="navbar_main"></div>
+    <h1>Rock The Streets</h1>
+    <div id="filters">
+        <div>
+        <svg style="padding-right:15px ;padding-left: 15px;" focusable="false" width="16" height="16" class="icon icon--filters icon--inline  " viewBox="0 0 16 16">
+            <path d="M0 4h16M0 12h16" fill="none" stroke="currentColor" stroke-width=""></path>
+            <circle cx="5" cy="4" r="2" fill="rgb(var(--background))" stroke="currentColor" stroke-width="2"></circle>
+            <circle cx="11" cy="12" r="2" fill="rgb(var(--background))" stroke="currentColor" stroke-width="2"></circle>
+          </svg>Show filters</div>
+          <div>
+         <span style="padding-right:15px ;padding-left: 15px;">Sort by</span>  <select name="sort by" id="activitySelector">
+            <option value="Best selling" id="1">Best selling</option>
+            <option value="Featured" id="2">Featured</option>           
+            <option value="atoz" id="atoz">Alphabetically, A-Z</option>
+            <option value="ztoa" id="ztoa">Alphabetically, Z-A</option>
+            <option value="lowtohigh" id="lowtohigh">Price, low to high</option>
+            <option value="highToLow" id="highToLow">Price, highToLow</option>
+            <option value="Date, old to new" id="7">Date, old to new</option>
+            <option value="Date, new to old" id="8">Date, new to old</option>
+        </select>
+    </div>
+    </div>
+   
+    <div id="containers">
+
+    </div>
+    <div id="footer_main"></div>
+</body>
+</html>
+<script type="module" src="./rock.js"></script>
+<!-- <script src="./rock.js"></script> -->

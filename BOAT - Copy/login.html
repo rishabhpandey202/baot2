@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- <link rel="stylesheet" href="./register.css"> -->
+    <link rel="stylesheet" href="./components/compo.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+
+#register{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+background-color: #252525;
+color: white;
+}
+h1{
+    font-size: 48px;
+    line-height: 1.0833333333;
+    letter-spacing: -1px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin-bottom: -5px;
+    margin: 48px 0 24px;
+    /* font-family: sans-serif; */
+}
+p{
+    font-size: 18px;
+    font-family: 'Montserrat';
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+::placeholder{
+    font-size: 18px;
+}
+#google img{
+    border-color: #2d5073;
+    background-color: #3b5998;
+    padding: 0px;
+    line-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 0px solid transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    padding: 18px 220px 18px 210px;
+    color: white;
+    background-color: red;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+}
+#register input{
+    padding: 15px 300px 15px 20px;
+    background-color: #252525;
+    border: solid 1px  #4e4e4e;
+    text-align: left;
+    font-family: Montserrat;
+}
+    </style>
+</head>
+<body>
+
+    <div id="navbar_main">  </div>
+  
+
+        <div id="register">
+            <h1>Login</h1>
+            <p>Please enter your e-mail and password:</p>
+            <div id="google">
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1896981220538415&kid_directed_site=0&app_id=1896981220538415&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fclient_id%3D1896981220538415%26state%3Dc6663dbb9050f593bd7949c776563c37%26response_type%3Dcode%26sdk%3Dphp-sdk-5.4.4%26redirect_uri%3Dhttps%253A%252F%252Fsocial-login.oxiapps.com%252Fauth%252Ffacebook%26scope%3Demail%26display%3Dpopup%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dde4d5fa8-b87f-4706-94be-d837ce6d1d7a%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fsocial-login.oxiapps.com%2Fauth%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dc6663dbb9050f593bd7949c776563c37%23_%3D_&display=popup&locale=en_GB&pl_dbl=0"><img src="https://toppng.com/uploads/preview/follow-us-on-social-media-facebook-small-icon-11563311040ggayarlfqm.png" alt="" > </a>
+            <a href="https://accounts.google.com/o/oauth2/auth/identifier?response_type=code&redirect_uri=https%3A%2F%2Fsocial-login.oxiapps.com%2Fauth%2Fgoogle&client_id=898543883992-ut65aoh5alu6s7jlcs5hk05htbagjs9n.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&access_type=online&approval_prompt=auto&flowName=GeneralOAuthFlow"><img src="https://www.clipartmax.com/png/small/105-1055517_google-chrome-icon-google-logo-round-png.png" alt=""></a>
+            
+            </div>
+            <input type="email" placeholder="Email" id="email" required><br>
+            <input type="password" placeholder="Password" id="password" required/><br>
+            <button id="login">LOGIN</button><br>
+             <span>New customer?  <a  style="color: rgb(113, 112, 112);" href="./register.html">Create an account</a></span>
+        </div>
+
+
+  
+    <div id="footer_main"></div>
+
+    
+</body>
+</html>
+<script  type="module" src="./login.js"></script>

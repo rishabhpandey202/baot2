@@ -1,0 +1,42 @@
+#register{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+background-color: #252525;
+color: white;
+}
+#register input{
+    padding: 15px 300px 15px 20px;
+    background-color: #252525;
+    border: solid 1px  #4e4e4e;
+    text-align: left;
+    font-family: Montserrat;
+}
+#register button{
+    padding: 18px 340px 18px 20px;
+    color: white;
+    background-color: red;
+    border: none;
+}
+h1{
+    font-size: 48px;
+    line-height: 1.0833333333;
+    letter-spacing: -1px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-bottom: -5px;
+    /* font-family: sans-serif; */
+    
+
+}
+p{
+    font-size: 18px;
+    font-family: 'Montserrat';
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+::placeholder{
+    font-size: 18px;
+}
